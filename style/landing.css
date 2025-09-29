@@ -19,7 +19,8 @@ body {
 .landing-wrapper {
   display: flex;
   align-items: center;
-  gap: 2rem; 
+  gap: 2rem;
+  flex-wrap: wrap; /* allows stacking on smaller screens */
 }
 
 /* Profile Image */
@@ -38,7 +39,7 @@ body {
 .landing-container {
   text-align: center;
   padding: 2rem;
-  border-left: 0.3rem solid #ffcc00; 
+  border-left: 0.3rem solid #ffcc00;
   max-width: 700px;
   animation: fadeIn 1.5s ease-in-out;
 }
@@ -47,7 +48,6 @@ h1 {
   font-size: 4rem;
   letter-spacing: 2px;
   text-transform: uppercase;
-  outline-color: black;
 }
 
 h2 {
@@ -105,4 +105,89 @@ footer {
   margin-top: 2rem;
   font-size: 0.9rem;
   color: #999;
+}
+
+/* ============================= */
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+/* ============================= */
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .profile-pic {
+    width: 250px;
+    height: 250px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 3rem 2rem 2rem 2rem;
+    height: auto;
+  }
+
+  .landing-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+  }
+
+  .landing-container {
+    border-left: none;       /* remove vertical line */
+    border-top: 0.3rem solid #ffcc00; /* horizontal line instead */
+    padding-top: 1rem;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+/* Small Phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  .btn-enter {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
 }
