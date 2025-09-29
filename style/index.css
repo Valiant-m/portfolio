@@ -296,28 +296,33 @@ h2 {
   font-size: 1rem;
   font-weight: 500;
   color: #fff;
+  padding-left: 2%;
 }
 
 .skill-percent {
   float: right;
   font-size: 0.9rem;
   color: #ffcc00;
+  margin-right: 2%;
 }
 
 .skill-bar {
-  width: 100%;
+  width: 96%;
   height: 0.5rem;
   background: #333;
   border-radius: 0.25rem;
   margin-top: 0.4rem;
   overflow: hidden;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 .skill-progress {
   height: 100%;
   background: linear-gradient(90deg, #ffcc00, #ffaa00);
   border-radius: 0.25rem;
-  transition: width 1s ease;
+  transition: width 1s ease;  
+  margin-right: 2%;
 }
 
 
