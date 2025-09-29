@@ -24,8 +24,6 @@ h2 {
   padding-left: 0.6rem;
 }
 
-
-
 /* ============================= */
 /* 2. SIDEBAR */
 /* ============================= */
@@ -43,13 +41,13 @@ h2 {
 }
 
 .sidebar h1 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin: 0.5rem 0;
   color: #fff;
 }
 
 .sidebar .job-title {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #ffcc00;
   font-weight: bold;
   margin-bottom: 1rem;
@@ -93,8 +91,8 @@ h2 {
 }
 
 .icon img {
-  width: 1rem;
-  height: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
   flex-shrink: 0; 
 }
 
@@ -104,14 +102,14 @@ h2 {
   gap: 0.2rem;
 }
 
-.label {
-  font-size: 0.85rem;  
-  font-weight: bold;
+.sidebar .info .label {
+  font-size: 1.1rem;
+  font-weight: bold;  
   color: #fff;
 }
 
-.value {
-  font-size: 0.85rem;
+.sidebar .info .value {
+  font-size: 1.1rem;
   color: #aaa;
   word-wrap: break-word; 
 }
@@ -131,8 +129,6 @@ h2 {
   height: 100%;
   border: 0;
 }
-
-
 
 /* ============================= */
 /* 3. MAIN CONTENT */
@@ -187,7 +183,6 @@ h2 {
   color: #ffcc00;
 }
 
-
 /* ============================= */
 /* 5. CONTENT SECTIONS */
 /* ============================= */
@@ -201,29 +196,25 @@ h2 {
 }
 
 #about p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.6;
   color: #ddd;
   margin-bottom: 1rem;
   text-align: justify;
+  margin: 0 1.5% 0 1.5%;
+  padding-bottom: 5px;
 }
 
 #about h3 {
   font-size: 1.5rem;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(0.6rem); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-
 /* ============================= */
 /* 6. CARDS */
 /* ============================= */
 .card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15.6rem, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* exactly 3 cards per row */
   gap: 1rem;
   margin-top: 1rem;
 }
@@ -240,9 +231,21 @@ h2 {
   transform: translateY(-0.3rem);
 }
 
+.card img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  text-align: justify;
+}
+
 /* ============================= */
 /* 7. RESUME SECTIONS */
 /* ============================= */
+.resume-section h4 {
+  font-size: 1.2rem;
+}
 .resume-item {
   margin-bottom: 0.5rem;  
 }
@@ -252,26 +255,25 @@ h2 {
   justify-content: space-between;
   align-items: center;
   margin: 0;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: #fff;
-  padding-bottom: 2.5px;
+  padding-bottom: 8px;
 }
 
 .resume-item .date {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #ffcc00;
-  white-space: nowrap; /* prevents date from wrapping */
+  white-space: nowrap; 
+  margin-right: 2%;
 }
 
-/* Optional: address styling */
 .school-address {
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-style: italic;
   color: #bbb;
   margin-top: 0.3rem;
 }
-
 
 .resume-section h3 {
   font-size: 1.5rem;
@@ -282,6 +284,10 @@ h2 {
   gap: 0.5rem;
   border-left: 0.25rem solid #ffcc00;
   padding-left: 0.6rem;
+}
+
+.resume-item p {
+  font-size: 1rem;
 }
 
 
@@ -301,7 +307,7 @@ h2 {
 
 .skill-percent {
   float: right;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #ffcc00;
   margin-right: 2%;
 }
@@ -319,7 +325,7 @@ h2 {
 
 .skill-progress {
   height: 100%;
-  background: linear-gradient(90deg, #ffcc00, #ffaa00);
+  background: #ce8f13;
   border-radius: 0.25rem;
   transition: width 1s ease;  
   margin-right: 2%;
@@ -409,10 +415,6 @@ footer {
     height: 0.9rem; 
   }
 
-  .label, .value { 
-    font-size: 0.8rem; 
-  }
-
   .content-box { 
     padding: 1rem; 
   }
@@ -456,10 +458,6 @@ footer {
     gap: 0.5rem;
   }
 
-  .label, .value { 
-    font-size: 0.8rem; 
-  }
-
   .top-nav a { 
     font-size: 0.8rem; 
   }
@@ -481,4 +479,9 @@ footer {
     padding: 0.4rem;
     font-size: 0.55rem;
   }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(0.6rem); }
+  to { opacity: 1; transform: translateY(0); }
 }
