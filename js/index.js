@@ -1,28 +1,54 @@
 const navLinks = document.querySelectorAll(".top-nav a");
-const sections = document.querySelectorAll(".content-section");
+const sections = document.querySelectorAll("section");
 
 // Load saved active section from localStorage
 const savedSection = localStorage.getItem("activeSection");
 if (savedSection) {
-  navLinks.forEach(l => l.classList.remove("active"));
-  sections.forEach(sec => sec.classList.remove("active"));
-
-  document.querySelector(`.top-nav a[data-section="${savedSection}"]`)?.classList.add("active");
-  document.getElementById(savedSection)?.classList.add("active");
+  setActive(savedSection);
 }
 
+// Function to set active section
+function setActive(sectionId) {
+  navLinks.forEach(link => link.classList.remove("active"));
+  sections.forEach(sec => sec.classList.remove("active"));
+
+  document.querySelector(`.top-nav a[href="#${sectionId}"]`)?.classList.add("active");
+  document.getElementById(sectionId)?.classList.add("active");
+
+  localStorage.setItem("activeSection", sectionId);
+}
+
+// Handle click on nav links
 navLinks.forEach(link => {
-  link.addEventListener("click", () => {
-    const sectionId = link.dataset.section;
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    const sectionId = link.getAttribute("href").substring(1);
+    const section = document.getElementById(sectionId);
 
-    navLinks.forEach(l => l.classList.remove("active"));
-    sections.forEach(sec => sec.classList.remove("active"));
+    // Smooth scroll with offset
+    const yOffset = -40; 
+    const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
-    link.classList.add("active");
-    document.getElementById(sectionId).classList.add("active");
+    window.scrollTo({ top: y, behavior: "smooth" });
 
-    // Save active section
-    localStorage.setItem("activeSection", sectionId);
+    setActive(sectionId);
   });
 });
-s
+
+// Update active link on scroll
+window.addEventListener("scroll", () => {
+  let current = "";
+
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 80;
+    const sectionHeight = section.clientHeight;
+
+    if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  if (current) {
+    setActive(current);
+  }
+});

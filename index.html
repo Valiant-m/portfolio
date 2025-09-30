@@ -3,178 +3,120 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style/index.css">
+  <title>Portfolio | One Page</title>
   <link rel="icon" type="image/x-icon" href="assets/images/fav.png">
+  <link rel="stylesheet" href="style/index.css">
 </head>
+
 <body>
+  <!-- =============== Nav Bar =============== -->
+  <nav class="nav-box">
+    <div class="top-nav">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#resume">Skills & Education</a>
+      <a href="#portfolio">My Projects</a>
+      <a href="#blog">Thesis</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
 
-  <!-- ================= Sidebar ================= -->
-  <aside class="sidebar">
-    <!-- Profile picture -->
-    <img src="assets/images/val.png" alt="profile-picture" class="va">
+  <!-- ================= Home ================= -->
+  <section id="home" class="landing-wrapper">
+   
+    <img src="assets/images/val.png" alt="Profile Picture" class="profile-pic">
 
-    <!-- Name & Job -->
-    <h1>Valiant S. Mi-ing</h1>
-    <p class="job-title">System Developer</p>
-    
-    <hr>
-
-    <!-- Contact Info -->
-    <div class="info">
-      <div class="info-item">
-        <span class="icon"><img src="assets/images/email (3).png" alt="email-icon"></span>
-        <div class="text-block">
-          <p class="label">Email:</p>
-          <p class="value">miingvaliant@gmail.com</p>
-        </div>
-      </div>
-
-      <div class="info-item">
-        <span class="icon"><img src="assets/images/phone.png" alt="phone-icon"></span>
-        <div class="text-block">
-          <p class="label">Phone:</p>
-          <p class="value">(+63) 939 7144 479</p>
-        </div>
-      </div>
-
-      <div class="info-item">
-        <span class="icon"><img src="assets/images/linkedin.png" alt="linkedIn-icon"></span>
-        <div class="text-block">
-          <p class="label">LinkedIn:</p>
-          <p class="value">www.linkedin.com/in/valiant-mi-ing/</p>
-        </div>
-      </div>
-
-      <div class="info-item">
-        <span class="icon"><img src="assets/images/location.png" alt="address-icon"></span>
-        <div class="text-block">
-          <p class="label">Address:</p>
-          <p class="value">Middle Quezon Hill Subdivision, Baguio City</p>
-        </div>
-      </div>
-
-      <!-- Inside sidebar -->
-      <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d478.3972237853742!2d120.57155578834967!3d16.41579447665816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1759113567681!5m2!1sen!2sph"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </div>
-
-
-  </aside>
-
+    <div class="landing-container">
+      <div class="floating-icon">⚡</div>
+      <h1>Valiant S. Mi-ing</h1>
+      <h2>System Developer</h2>
+      <br>
+      <p>A showcase of my work, skills, and passion for System and Web Development.  
+      Explore projects, experience, and more below.
+      </p>
+      <a href="#about" class="btn-enter">Enter Portfolio</a>
+    </div>
+  </section>
 
   <!-- ================= Main Content ================= -->
   <main class="main">
-    <div class="content-box">
+    <section id="about" class="content-section no-box">
+      <h2>About Me</h2>
+      <p id="description">
+        I am a passionate System Developer with experience in designing, building, and maintaining software solutions that solve real-world problems. 
+        I specialize in creating efficient, scalable, and user-friendly applications by combining strong technical skills with a keen eye for detail. 
+        My expertise includes backend and frontend development, database design, and systems integration. 
+        I enjoy working with modern frameworks, and agile methodologies to deliver high-quality results. 
+        Beyond coding, I value teamwork, continuous learning, and innovation, striving to provide solutions that not only meet client needs but also exceed expectations.
+      </p>
 
-      <!-- Navigation -->
-      <nav class="nav-box">
-        <div class="top-nav">
-          <a href="landing.html">Home</a>
-          <a class="active" data-section="about">About</a>
-          <a data-section="resume">Skills & Education</a>
-          <a data-section="portfolio">My Projects</a>
-          <a data-section="blog">Thesis</a>
-          <a data-section="contact">Contact</a>
+      <h2>Interest</h2>
+      <div class="card-container">
+        <div class="card">
+          <h3>System Development</h3>
+          <p>High-quality development of responsive and dynamic websites at the professional level.</p>
         </div>
-      </nav>
-
-      <!-- About Section -->
-      <section id="about" class="content-section active">
-        <h2>About Me</h2>
-          <p>
-            I am a passionate System Developer with experience in designing, building, and maintaining software solutions that solve real-world problems. 
-            I specialize in creating efficient, scalable, and user-friendly applications by combining strong technical skills with a keen eye for detail. 
-            My expertise includes backend and frontend development, database design, and systems integration. 
-            I enjoy working with modern frameworks, and agile methodologies to deliver high-quality results. 
-            Beyond coding, I value teamwork, continuous learning, and innovation, striving to provide solutions that not only meet client needs but also exceed expectations.
-          </p>
-          
-        </p>
-
-        <h2>Interest</h2>
-        <div class="card-container">
-          <div class="card">
-            <h3>System Development</h3>
-            <p>High-quality development of responsive and dynamic websites at the professional level.</p>
-          </div>
-          <div class="card">
-            <h3>Web Applications</h3>
-            <p>Professional development of scalable and secure web applications for businesses and organizations.</p>
-          </div>
-  
-          <div class="card">
-            <h3>Database Management</h3>
-            <p>Designing, optimizing, and managing relational and non-relational databases for efficiency and reliability.</p>
-          </div>
-
-          <div class="card">
-            <h3>Solving Sudoko Puzzles</h3>
-            <p>Solving Sudoku puzzles to sharpen logical thinking and problem-solving skills.</p>
-          </div>
-
-          <div class="card">
-            <h3>Photography</h3>
-            <p>Capturing moments and creating visual stories through quality photos.</p>
-          </div>
+        <div class="card">
+          <h3>Web Applications</h3>
+          <p>Professional development of scalable and secure web applications for businesses and organizations.</p>
         </div>
-      </section>
-
-      <!-- Resume Section -->
-      <section id="resume" class="content-section">
-        <!-- Education -->
-        <div class="resume-section">
-          <h3><span class="icon">🎓</span> Education</h3>
-            <div class="resume-item">
-              <h4>Saint Louis University <span class="date">2020 — 2025</span></h4>
-              <p>Bachelor of Science in Information Technology</p>
-              <p class="school-address">Baguio City, Philippines</p>
-            </div>
-          
-          <br>
-
-          <div class="resume-item">
-              <h4>Mankayan National High School<span class="date">2020 — 2018</span></h4>
-              <p>Senior High School</p>
-              <p class="school-address">Benguet, Philippines</p>
-          </div>
-
-           <br>
-
-          <div class="resume-item">
-              <h4>Mankayan National High School<span class="date">2014 — 2018</span></h4>
-              <p>Junior High School</p>
-              <p class="school-address">Benguet, Philippines</p>
-          </div>
-          <br>
+        <div class="card">
+          <h3>Database Management</h3>
+          <p>Designing, optimizing, and managing relational and non-relational databases for efficiency and reliability.</p>
         </div>
-
-        <!-- Experience -->
-        <div class="resume-section">
-          <h3><span class="icon">💼</span> Experience</h3>
-            <div class="resume-item">
-              <h4>Technical Support (Intern) <span class="date">January 2025 — May 2025</span></h4>
-              <p>Developed a web application for webinar training management for teachers and enhanced and suggest improvement
-                 of the company website. 
-              </p>
-            </div>
+        <div class="card">
+          <h3>Solving Sudoku Puzzles</h3>
+          <p>Solving Sudoku puzzles to sharpen logical thinking and problem-solving skills.</p>
         </div>
+        <div class="card">
+          <h3>Photography</h3>
+          <p>Capturing moments and creating visual stories through quality photos.</p>
+        </div>
+      </div>
+    </section>
 
+    <!-- Resume Section -->
+    <section id="resume" class="content-section">
+      <div class="about-section">
+        <h3><span class="icon">🎓</span> Education</h3>
+        <div class="about-item">
+          <h4 class="shool">Saint Louis University <span class="date">2020 - 2025</span></h4>
+          <p>Bachelor of Science in Information Technology</p>
+          <p class="school-address">Baguio City, Philippines</p>
+        </div>
         <br>
+        <div class="about-item">
+          <h4 class="shool">Mankayan National High School<span class="date">2020 - 2018</span></h4>
+          <p>Senior High School</p>
+          <p class="school-address">Benguet, Philippines</p>
+        </div>
+        <br>
+        <div class="about-item">
+          <h4 class="shool">Mankayan National High School<span class="date">2014 - 2018</span></h4>
+          <p>Junior High School</p>
+          <p class="school-address">Benguet, Philippines</p>
+        </div>
+        <br>
+      </div>
 
-        <!-- Skills -->
-        <div class="resume-section">
-          <h3><span class="icon">🔥</span> My Skills</h3>
-          <div class="skill">
+      <div class="about-section">
+        <h3><span class="icon">💼</span> Experience</h3>
+        <div class="about-item">
+          <h4 class="experience">Technical Support (Intern) <span class="date">January 2025 — May 2025</span></h4>
+          <p>Developed a web application for webinar training management for teachers and enhanced and suggest improvement
+            of the company website.
+          </p>
+        </div>
+      </div>
 
-            <h4>Programming Language</h4>
-            
-            <br>
-            <span class="skill-title">Java</span>
+      <br>
+
+      <div class="about-section">
+        <h3><span class="icon">🔥</span> My Skills</h3>
+        <div class="skill">
+          <h4>Programming Language</h4>
+          <br>
+          <span class="skill-title">Java</span>
             <span class="skill-percent">80%</span>
             <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
           </div>
@@ -233,72 +175,70 @@
             <span class="skill-percent">60%</span>
             <div class="skill-bar"><div class="skill-progress" style="width: 60%;"></div></div>
           </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="content-section">
+      <h2>My Projects</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="assets/images/image.png">
+          <h3>Kultoura</h3>
+          <p>This is a  </p>
         </div>
-      </section>
-
-      <!-- Portfolio Section -->
-      <section id="portfolio" class="content-section">
-        <h2>My Projects</h2>
-        <div class="card-container">
-
-          <div class="card">
-            <img src="assets/images/image.png">
-            <h3>Wordy Game</h3><br>
-            <p>It is game called wordy where players can create account and login. In the game a player can 
-              create a waiting lobby for other players to join and within 10 seconds the game will start.
-              <!-- The players will play a round where each round a random 10 letters is given and players 
-              will start to from words from it within 10 seconds, the player who has the longest word will be
-              declared as the winner after the round time. After another round will start with new 10 letters
-              a player is declared the game winner after 3 round win. -->
-            </p>
-          </div>
-
-          <div class="card">
-            <img src="assets/images/image.png">
-            <h3>Document Reviewer Web Application</h3><br>
-            <p>It is a web application document reviewer where a user can upload a document for a offices to review.
-              The document can be either declined or approved for the next review in the other office.
-            </p>
-          </div>
-
-          <div class="card">
-            <img src="assets/images/image.png">
-            <h3>IT IS A </h3><br>
-            <p>It is game called wordy where players can create account and login. In the game a player can 
-              create a waiting lobby for other players to join and within 10 seconds the game will start.
-            </p>
-          </div>
+        <div class="card">
+          <img src="assets/images/image.png">
+          <h3>Wordy Game</h3>
+          <p>This is asd </p>
         </div>
-      </section>
+        <div class="card">
+          <img src="assets/images/image.png">
+          <h3>Document Reviewer Web Application</h3>
+          <p>This is asd </p>
+        </div>  
+      </div>
+    </section>
 
-      <!-- Blog Section -->
-      <section id="blog" class="content-section">
-        <h2>Blog</h2>
-        <div class="card-container">
-          <div class="card">
-            <h3>Post Title 1</h3>
-            <p>Quick excerpt of your blog post.</p>
-          </div>
-          <div class="card">
-            <h3>Post Title 2</h3>
-            <p>Quick excerpt of your blog post.</p>
-          </div>
+    <!-- Blog Section -->
+    <section id="blog" class="content-section">
+      <h2>Blog</h2>
+      <div class="card-container">
+        <div class="card">
+          <h3>Post Title 1</h3>
+          <p>Quick excerpt of your blog post.</p>
         </div>
-      </section>
+        <div class="card">
+          <h3>Post Title 2</h3>
+          <p>Quick excerpt of your blog post.</p>
+        </div>
+      </div>
+    </section>
 
-      <!-- Contact Section -->
-      <section id="contact" class="content-section">
-        <h2>Contact</h2>
-        <p>If you’d like to get in touch, feel free to reach out via email or connect with me on LinkedIn.</p>
-        <p>Email: <a href="mailto:richard@example.com">richard@example.com</a></p>
-      </section>
+    <!-- Contact Section -->
+    <section id="contact" class="content-section">
+      <h2>Contact</h2>
+      <p>If you’d like to get in touch, feel free to reach out via email or connect with me on LinkedIn.</p>
+      <p>Email: <a href="mailto:richard@example.com">richard@example.com</a></p>
+    </section>
 
-      <!-- Footer -->
-      <footer>
-        © 2025 My Portfolio. All Rights Reserved.
-      </footer>
-
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1913.5852419980192!2d120.57181008864467!3d16.416165738438767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3391a1003aebf95b%3A0x4cbc05568cc663f7!2sQuezon%20Hill%20road!5e0!3m2!1sen!2sph!4v1759200050674!5m2!1sen!2sph" 
+        width="1300" 
+        height="500" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
     </div>
+
+
+    <!-- Footer -->
+    <footer>
+      © 2025 My Portfolio. All Rights Reserved.
+    </footer>
+
   </main>
 
   <script src="js/index.js"></script>
