@@ -369,22 +369,104 @@ footer {
 }
 
 /* Media queries */
+/* ===================== Responsive Fixes ===================== */
+
+/* Tablet view (<=1024px) */
 @media (max-width: 1024px) {
-  .profile-pic { width: 250px; height: 250px; }
-  .landing-container h1 { font-size: 3rem; }
-  .card-container { grid-template-columns: 1fr 1fr; }
+  .profile-pic { 
+    width: 220px; 
+    height: 220px; 
+  }
+  .landing-container h1 { 
+    font-size: 2.5rem; 
+  }
+  .content-section { 
+    padding-left: 4rem; 
+    padding-right: 4rem; 
+  }
+  .card-container { 
+    grid-template-columns: 1fr 1fr; 
+  }
 }
 
+/* Large Mobile / Small Tablet (<=768px) */
 @media (max-width: 768px) {
-  .profile-pic { width: 200px; height: 200px; }
-  .landing-container { border-left: none; border-top: 0.3rem solid #ffcc00; }
-  .card-container { grid-template-columns: 1fr; }
+  body { 
+    padding-top: 60px; 
+  }
+  .nav-box {
+    top: 0;
+    right: 0;
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    padding: 0.8rem;
+    text-align: center;
+  }
+  .top-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .profile-pic { 
+    width: 180px; 
+    height: 180px; 
+  }
+  .landing-container {
+    border-left: none; 
+    border-top: 0.25rem solid #ffcc00;
+    padding: 1.2rem;
+  }
+  .landing-container h1 { 
+    font-size: 2rem; 
+  }
+  .landing-container h2 { 
+    font-size: 1.3rem; 
+  }
+  .landing-container p { 
+    font-size: 1rem; 
+  }
+  .content-section { 
+    padding-left: 2rem; 
+    padding-right: 2rem; 
+  }
+  .card-container { 
+    grid-template-columns: 1fr; 
+  }
 }
 
+/* Small Mobile (<=480px) */
 @media (max-width: 480px) {
-  .profile-pic { width: 150px; height: 150px; }
-  .landing-container h1 { font-size: 1.8rem; }
-  .btn-enter { font-size: 1rem; padding: 0.6rem 1.2rem; }
+  .profile-pic { 
+    width: 140px; 
+    height: 140px; 
+  }
+  .landing-container h1 { 
+    font-size: 1.6rem; 
+  }
+  .landing-container h2 { 
+    font-size: 1.1rem; 
+  }
+  .landing-container p { 
+    font-size: 0.95rem; 
+  }
+  .btn-enter { 
+    font-size: 0.9rem; 
+    padding: 0.5rem 1rem; 
+  }
+  .content-section { 
+    padding-left: 1rem; 
+    padding-right: 1rem; 
+  }
+  .card h3 { 
+    font-size: 1rem; 
+  }
+  .card p { 
+    font-size: 0.9rem; 
+  }
+  footer { 
+    font-size: 0.6rem; 
+  }
 }
 
 
