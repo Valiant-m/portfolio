@@ -460,11 +460,11 @@ footer {
 }
 
 .right-toggle {
-  position: fixed;       /* stays in place */
-  bottom: 0px;          /* distance from bottom */
-  right: 0px;           /* distance from right */
-  transform: translateY(-50%); /* perfect vertical centering */
-  z-index: 9999;         /* on top of everything */
-  border-radius: 8px 0 0 8px; /* rounded left side */
+  position: fixed;       
+  bottom: 0px;          
+  right: 0px;           
+  transform: translateY(-50%); 
+  z-index: 9999;       
+  border-radius: 8px 0 0 8px; /
   padding-right: 1%;
 }
