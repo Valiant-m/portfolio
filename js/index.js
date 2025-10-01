@@ -1,5 +1,7 @@
 const navLinks = document.querySelectorAll(".top-nav a");
 const sections = document.querySelectorAll("section");
+const toggle = document.getElementById("myToggle");
+const body = document.body;
 
 // Load saved active section from localStorage
 const savedSection = localStorage.getItem("activeSection");
@@ -53,9 +55,20 @@ window.addEventListener("scroll", () => {
   }
 });
 
-const toggle = document.getElementById("myToggle");
-  const body = document.body;
+// Load saved theme from localStorage
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme === "light") {
+  body.classList.add("light-mode");
+  toggle.checked = true; 
+}
 
-  toggle.addEventListener("change", () => {
-    body.classList.toggle("light-mode");
-  });
+// Toggle listener
+toggle.addEventListener("change", () => {
+  if (toggle.checked) {
+    body.classList.add("light-mode");
+    localStorage.setItem("theme", "light");  
+  } else {
+    body.classList.remove("light-mode");
+    localStorage.setItem("theme", "dark"); 
+  }
+});
