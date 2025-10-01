@@ -68,7 +68,7 @@ body.light-mode .nav-box {
   border-radius: 0; 
   padding: 1rem 2rem;
   margin: 0; 
-  box-shadow: 0 0.25rem 0.9rem white;
+  box-shadow: 0 0.25rem 0.25rem rgb(122, 122, 122);
   z-index: 1000;
 }
 
