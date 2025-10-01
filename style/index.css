@@ -244,7 +244,7 @@ p {
 }
 
 /* Resume + Skills */
-.about-item h4 {
+.about-item h3 {
   font-size: 1.2rem;
   display: flex;
   justify-content: space-between;
@@ -267,6 +267,12 @@ p {
 
 .skill {
   margin-bottom: 1.2rem;
+}
+
+.skill img {
+  width: 30px;
+  height: 30px;
+  margin-right: 1%;
 }
 
 .skill h4 {

@@ -87,6 +87,17 @@ body.light-mode .top-nav a {
   font-size: 1rem;
 }
 
+body.light-mode #home > img:first-child {
+  width: 350px;
+  height: 350px;
+  border-radius: 20%;
+  object-fit: cover;
+  border: 3px solid #ffcc00;
+  box-shadow: 0 0 15px rgba(255, 204, 0, 0.5);
+  animation: fadeIn 1.5s ease-in-out;
+  object-position: top;
+}
+
 body.light-mode #about h2, body.light-mode #portfolio h2, body.light-mode #gallery h2, body.light-mode #contact h2, body.light-mode #achievements h2, body.light-mode .school-address {
   color:#121212;
 }
@@ -94,6 +105,7 @@ body.light-mode #about h2, body.light-mode #portfolio h2, body.light-mode #galle
 body.light-mode .landing-wrapper {
   background-color: white;
 }
+
 body.light-mode .landing-container h1 {
   color: #ffcc00;
 }
@@ -112,16 +124,5 @@ body.light-mode .card p, body.light-mode .card h3 {
 
 body.light-mode .top-nav a.active {
   color: #ffcc00; 
-}
-
-body.light-mode .profile-pic {
-  width: 350px;
-  height: 350px;
-  border-radius: 20%;
-  object-fit: cover;
-  border: 3px solid #ffcc00;
-  box-shadow: 0 0 15px rgba(255, 204, 0, 0.5);
-  animation: fadeIn 1.5s ease-in-out;
-  object-position: top;
 }
 
