@@ -26,7 +26,7 @@ navLinks.forEach(link => {
     const section = document.getElementById(sectionId);
 
     // Smooth scroll with offset
-    const yOffset = -40; 
+    const yOffset = -72; 
     const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
     window.scrollTo({ top: y, behavior: "smooth" });
@@ -40,7 +40,7 @@ window.addEventListener("scroll", () => {
   let current = "";
 
   sections.forEach(section => {
-    const sectionTop = section.offsetTop - 80;
+    const sectionTop = section.offsetTop - 85 ;
     const sectionHeight = section.clientHeight;
 
     if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
