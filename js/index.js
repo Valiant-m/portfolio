@@ -52,3 +52,10 @@ window.addEventListener("scroll", () => {
     setActive(current);
   }
 });
+
+const toggle = document.getElementById("myToggle");
+  const body = document.body;
+
+  toggle.addEventListener("change", () => {
+    body.classList.toggle("light-mode");
+  });

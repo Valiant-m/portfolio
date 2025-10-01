@@ -6,6 +6,7 @@
   <title>My Portfolio</title>
   <link rel="icon" type="image/x-icon" href="assets/images/fav.png">
   <link rel="stylesheet" href="style/index.css">
+  <link rel="stylesheet" href="style/switch.css">
 </head>
 
 <body>
@@ -26,9 +27,7 @@
 
   <!-- ================= Home ================= -->
   <section id="home" class="landing-wrapper">
-   
     <img src="assets/images/val.png" alt="profile-picture" class="profile-pic">
-
     <div class="landing-container">
       <div class="floating-icon">⚡</div>
       <h1>Valiant S. Mi-ing</h1>
@@ -41,13 +40,18 @@
         <a href="https://www.facebook.com/" target="_blank">
           <img src="assets/images/contacts/facebook (1).png" class="yellow-icon" alt="facebook-logo">
         </a>
-        <a href="mailto:vhanzdeass31@gmail.com">
+        <a href="mailto:">
           <img src="assets/images/contacts/instagram.png" class="yellow-icon" alt="gmail-logo">
         </a>
-        <a href="https://www.linkedin.com/in/valiant-mi-ing/" target="_blank">
+        <a href="https://www.linkedin.com/" target="_blank">
           <img src="assets/images/contacts/linkedin.png" class="yellow-icon" alt="linkedin-logo">
         </a>
       </div>
+
+      <label class="toggle-switch">
+        <input type="checkbox" id="myToggle">
+        <span class="slider round"></span>
+      </label>
     </div>
   </section>
 
@@ -125,11 +129,11 @@
           </p>
         </div>
       </div>
-
       <br>
 
       <div class="about-section">
         <h3><span class="icon">🔥</span> My Skills</h3>
+        
         <div class="skill">
           <h4>Programming Language</h4>
           <br>
@@ -145,12 +149,12 @@
           <div class="skill">
             
             <h4>Web Developement</h4>
-
             <br>
             <span class="skill-title">Php</span>
             <span class="skill-percent">65%</span>
             <div class="skill-bar"><div class="skill-progress" style="width: 65%;"></div></div>
           </div>
+
           <div class="skill">
             <span class="skill-title">HTML</span>
             <span class="skill-percent">65%</span>
@@ -176,7 +180,6 @@
           </div>
 
            <h4>Database Management</h4>
-
             <br>
           <div class="skill">
             <span class="skill-title">MySQL</span>
@@ -185,8 +188,7 @@
           </div>
 
           <h4>Version Control</h4>
-
-            <br>
+          <br>
           <div class="skill">
             <span class="skill-title">Git</span>
             <span class="skill-percent">60%</span>

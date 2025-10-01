@@ -1,0 +1,119 @@
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(77, 74, 74);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: black;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: rgb(77, 74, 74);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+  background-color:white; 
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+body.light-mode {
+  background-color: #ffffff;
+  color: #121212;
+}
+
+body.light-mode .nav-box {
+  position: fixed;
+  top: 0;
+  left: 0;       
+  width: 100%;   
+  background-color: white;
+  border-radius: 0; 
+  padding: 1rem 2rem;
+  margin: 0; 
+  box-shadow: 0 0.25rem 0.9rem white;
+  z-index: 1000;
+}
+
+body.light-mode .top-nav h1 {
+  margin: 0; 
+  color: black; 
+  font-size: 1.5rem;
+}
+
+body.light-mode .top-nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+body.light-mode .landing-wrapper {
+  background-color: white;
+}
+body.light-mode .landing-container h1 {
+  color: #ffcc00;
+}
+
+body.light-mode .landing-container h2 {
+  color: #ce8f13;
+}
+
+body.light-mode .landing-container p {
+  color: black;
+}
+
+body.light-mode .top-nav a.active {
+  color: #ffcc00; 
+}
+
+body.light-mode .profile-pic {
+  width: 350px;
+  height: 350px;
+  border-radius: 20%;
+  object-fit: cover;
+  border: 3px solid #ffcc00;
+  box-shadow: 0 0 15px rgba(255, 204, 0, 0.5);
+  animation: fadeIn 1.5s ease-in-out;
+  object-position: top;
+}
+
