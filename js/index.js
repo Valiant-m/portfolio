@@ -29,7 +29,7 @@ navLinks.forEach(link => {
     const yOffset = -72; 
     const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
-    window.scrollTo({ top: y, behavior: "smooth" });
+    window.scrollTo({ top: y, behavior: "smooth" });;
 
     setActive(sectionId);
   });
