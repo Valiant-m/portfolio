@@ -87,7 +87,7 @@ body.light-mode .top-nav a {
   font-size: 1rem;
 }
 
-body.light-mode #about h2, #portfolio h2, #blog h2, #contact h2, #achievements h2, .school-address {
+body.light-mode #about h2, body.light-mode #portfolio h2, body.light-mode #gallery h2, body.light-mode #contact h2, body.light-mode #achievements h2, body.light-mode .school-address {
   color:#121212;
 }
 
@@ -102,11 +102,11 @@ body.light-mode .landing-container h2 {
   color: #ce8f13;
 }
 
-body.light-mode .landing-container p, .about-item h4, .skill h4, .skill-title, .about-section h3{
+body.light-mode .landing-container p, body.light-mode .about-item h4, body.light-mode .skill h4, body.light-mode .skill-title, body.light-mode .about-section h3{
   color: #121212;
 }
 
-body.light-mode .card p, .card h3 {
+body.light-mode .card p, body.light-mode .card h3 {
   color: white;
 } 
 

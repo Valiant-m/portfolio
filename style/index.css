@@ -19,29 +19,8 @@ p {
   font-size: 1.2rem;
   margin-left: 1%;
 }
+
 /* NAVIGATION  */
-
-.icons a {
-  display: inline-block;
-  text-decoration: none;
-}
-
-.yellow-icon {
-  width: 55px;
-  height: 55px;
-  object-fit: contain;
-  object-position: center;
-  background-color: transparent;
-  margin: 0 5px;
-  padding: 5px;
-  cursor: pointer;
-  transition: transform 0.3s ease, filter 0.3s ease; 
-}
-
-.yellow-icon:hover {
-  transform: scale(1.20); 
-}
-
 .nav-box {
   position: fixed;
   top: 0;
@@ -74,7 +53,6 @@ p {
   font-size: 1.5rem;
 }
 
-
 .top-nav a {
   text-decoration: none;
   color: white;
@@ -105,7 +83,7 @@ p {
   background-color: #121212; 
 }
 
-.profile-pic {
+#home > img:first-child {
   width: 350px;
   height: 350px;
   border-radius: 20%;
@@ -148,6 +126,27 @@ p {
   animation: float 3s ease-in-out infinite;
 }
 
+.icons a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.icons img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  object-position: center;
+  background-color: transparent;
+  margin: 0 5px;
+  padding: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease; 
+}
+
+.icons img:hover {
+  transform: scale(1.20); 
+}
+
 .right-toggle {
   position: fixed;       
   bottom: 0;          
@@ -170,7 +169,7 @@ p {
 }
 
 /* MAIN CONTENT */
- 
+
 .main {
   margin: 0;            
   padding: 0;           
@@ -178,13 +177,10 @@ p {
   width: 100%;
 }
 
-#about {
- padding-bottom: 2%;
-}
-
-#about h2, #portfolio h2, #blog h2, #contact h2, #achievements h2 {
+#about h2, #portfolio h2, #blog h2, #contact h2, #achievements h2, #resume h2, #gallery h2, #projects h2 {
   font-size: 1.5rem;
   margin-bottom: 1.2rem;
+  margin-top: 2%;
   color: #fff;
   display: flex;
   align-items: center;
@@ -193,43 +189,11 @@ p {
   padding-left: 0.6rem;
 }
 
-#portfolio {
-  padding-bottom: 2%;
-}
-
-#achievements {
-  padding-bottom: 2%;
-}
-
-#blog {
-  padding-top: 2%;
-  padding-bottom: 2%;
-}
-
-#contact {
-  padding-bottom: 2%; 
-}
-
-#contact p {
-  padding-bottom: 2px;
-}
-
-.map-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 0;
-}
-
-
-#about p {
-  padding-left: 1%;
-  text-align: justify;
-}
-
 #description {
   margin: 1% 0 1% 0.5%;
   text-align: justify;
   font-size: 1.2rem;
+  padding-left: 1%;
 } 
 
 .content-section {
@@ -242,12 +206,6 @@ p {
   padding-left: 12rem;   
   padding-right: 12rem;
   animation: fadeIn 0.5s ease;
-}
-
-.ox {
-  background: transparent;
-  box-shadow: none;
-  padding:  0 12rem;    
 }
 
 .card-container {
@@ -282,30 +240,15 @@ p {
   padding: 0.7rem 1rem 0 1rem;
   margin-left: 0.5rem;
   text-align: justify;
+  font-size: 1.2;
 }
 
 /* Resume + Skills */
-.about-section h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1.2rem;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  border-left: 0.25rem solid #ffcc00;
-  padding-left: 0.6rem;
-}
-
-.about-item {
-  margin-bottom: 0.5rem;
-}
-
 .about-item h4 {
   font-size: 1.2rem;
   display: flex;
   justify-content: space-between;
   color: #fff;
-  padding-bottom: 0.2rem;
 }
 
 .about-item .date {
@@ -365,6 +308,12 @@ p {
   margin-left: 0;
 }
 
+.map-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
 /* Footer */
 footer {
   text-align: center;
@@ -380,7 +329,7 @@ footer {
 
 /* Tablet view (<=1024px) */
 @media (max-width: 1024px) {
-  .profile-pic { 
+  #home > img:first-child { 
     width: 220px; 
     height: 220px; 
   }
@@ -401,6 +350,7 @@ footer {
   body { 
     padding-top: 60px; 
   }
+  
   .nav-box {
     top: 0;
     right: 0;
@@ -410,15 +360,18 @@ footer {
     padding: 0.8rem;
     text-align: center;
   }
+
   .top-nav {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
   }
-  .profile-pic { 
+
+  #home > img:first-child { 
     width: 180px; 
     height: 180px; 
   }
+
   .landing-container {
     border-left: none; 
     border-top: 0.25rem solid #ffcc00;
@@ -444,7 +397,7 @@ footer {
 
 /* Small Mobile (<=480px) */
 @media (max-width: 480px) {
-  .profile-pic { 
+  #home > img:first-child { 
     width: 140px; 
     height: 140px; 
   }
