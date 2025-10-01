@@ -465,6 +465,6 @@ footer {
   right: 0px;           
   transform: translateY(-50%); 
   z-index: 9999;       
-  border-radius: 8px 0 0 8px; /
+  border-radius: 8px 0 0 8px; 
   padding-right: 1%;
 }
