@@ -56,8 +56,8 @@ window.addEventListener("scroll", () => {
 
 // Load saved theme from localStorage
 const savedTheme = localStorage.getItem("theme");
-if (savedTheme === "dark") {
-  body.classList.add("dark-mode");
+if (savedTheme === "light") {
+  body.classList.add("light-mode");
   toggle.checked = true; 
 }
 

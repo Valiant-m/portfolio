@@ -240,7 +240,7 @@ p {
   padding: 0.7rem 1rem 0 1rem;
   margin-left: 0.5rem;
   text-align: justify;
-  font-size: 1.2;
+  font-size: 1.1rem;
 }
 
 /* Resume + Skills */
@@ -248,7 +248,8 @@ p {
   font-size: 1.2rem;
   display: flex;
   justify-content: space-between;
-  color: #fff;
+  color: #fff; 
+  margin-top: 0.5%; 
 }
 
 .about-item .date {
@@ -259,6 +260,12 @@ p {
   font-size: 1rem;
   font-style: italic;
   color: #bbb;
+}
+
+.experience {
+  margin-top: 0.5%;
+  margin-right: 30%;
+  text-align: justify;
 }
 
 .about-item p {
@@ -273,6 +280,10 @@ p {
   width: 30px;
   height: 30px;
   margin-right: 1%;
+}
+
+.skill:nth-of-type(3) .skill-title img {
+  object-position: center;
 }
 
 .skill h4 {

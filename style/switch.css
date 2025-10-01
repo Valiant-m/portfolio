@@ -98,7 +98,7 @@ body.light-mode #home > img:first-child {
   object-position: top;
 }
 
-body.light-mode #about h2, body.light-mode #portfolio h2, body.light-mode #gallery h2, body.light-mode #contact h2, body.light-mode #achievements h2, body.light-mode .school-address {
+body.light-mode #about h2, body.light-mode #portfolio h2, body.light-mode #resume h2, body.light-mode #gallery h2, body.light-mode #contact h2, body.light-mode #achievements h2, body.light-mode .school-address {
   color:#121212;
 }
 
@@ -114,13 +114,21 @@ body.light-mode .landing-container h2 {
   color: #ce8f13;
 }
 
-body.light-mode .landing-container p, body.light-mode .about-item h4, body.light-mode .skill h4, body.light-mode .skill-title, body.light-mode .about-section h3{
+body.light-mode .landing-container p, body.light-mode .about-item h3, body.light-mode .skill h4, body.light-mode .skill-title, body.light-mode .about-section h3{
   color: #121212;
 }
 
 body.light-mode .card p, body.light-mode .card h3 {
   color: white;
 } 
+
+body.light-mode .card {
+  background-color: rgb(83, 80, 80);
+  padding: 1rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 0.25rem 0.6rem rgba(0,0,0,0.5);
+  transition: transform 0.3s;
+}
 
 body.light-mode .top-nav a.active {
   color: #ffcc00; 
