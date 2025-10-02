@@ -118,11 +118,11 @@ body.light-mode .landing-container p, body.light-mode .about-item h3, body.light
   color: #121212;
 }
 
-body.light-mode .card p, body.light-mode .card h3 {
+body.light-mode .card-two p, body.light-mode .card-two h3 {
   color: white;
 } 
 
-body.light-mode .card {
+body.light-mode .card-two {
   background-color: rgb(83, 80, 80);
   padding: 1rem;
   border-radius: 0.6rem;
