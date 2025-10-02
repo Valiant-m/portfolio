@@ -420,19 +420,35 @@ p {
 }
 
 .contact-box {
+  display: flex;
+  align-items: center;  /* keep icon and text aligned in middle */
+  gap: 12px;
   margin-bottom: 20px;
 }
 
-.contact-box h3 {
+.contact-box img {
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+}
+
+.contact-box-text {
+  display: flex;
+  flex-direction: row;   /* put h3 and p side by side */
+  align-items: center;
+  gap: 6px;              /* space between h3 and p */
+}
+
+.contact-box-text h3 {
+  margin: 0;
   font-size: 16px;
-  margin-bottom: 5px;
   color: white;
 }
 
-.contact-box p {
+.contact-box-text p {
+  margin: 0;
   font-size: 14px;
   color: white;
-  line-height: 1.4;
 }
 
 /* Social Icons */
