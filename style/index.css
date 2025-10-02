@@ -213,12 +213,14 @@ p {
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   margin-top: 1rem;
-}
+} 
 
 .sys {
   width: 400px;
-  height: 250px;
-  margin-top: 1%;
+  height: 200px;
+  margin-top: 4%;
+  border-radius: 3%;
+  border: 1px solid white;
 }
 
 .card-container {
@@ -255,7 +257,6 @@ p {
 
 
 .card p {
-  padding: 0.7rem 1rem 0 1rem;
   margin-left: 0.5rem;
   text-align: justify;
   font-size: 1.1rem;
