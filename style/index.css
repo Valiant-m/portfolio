@@ -30,7 +30,7 @@ p {
   border-radius: 0; 
   padding: 1rem 2rem;
   margin: 0; 
-  box-shadow: 0 0.25rem 0.25rem #121212;
+  box-shadow: 0 0.10rem 0.25rem rgb(180, 180, 180);
   z-index: 1000;
 }
 
@@ -187,6 +187,10 @@ p {
   gap: 0.5rem;
   border-left: 0.25rem solid #ffcc00;
   padding-left: 0.6rem;
+}
+
+#contact > p:last-child {
+  margin-bottom: 2%;
 }
 
 #description {
