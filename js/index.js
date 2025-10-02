@@ -71,3 +71,13 @@ toggle.addEventListener("change", () => {
     localStorage.setItem("theme", "dark");   
   }
 });
+
+function openGmailCompose() {
+  const email = "miingvaliant@gmail.com"; 
+  const subject = "Hire Me";
+  const body = "Email me with the requirements and everything.";
+
+  const gmailURL = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+  window.open(gmailURL, '_blank'); 
+}
