@@ -74,8 +74,8 @@ toggle.addEventListener("change", () => {
 
 function openGmailCompose() {
   const email = "miingvaliant@gmail.com"; 
-  const subject = "Hire Me";
-  const body = "Email me with the requirements and everything.";
+  const subject = "Hiring Inquiry – Portfolio Website";
+  const body = "Hello,\n\nI came across your portfolio and I’m interested in discussing potential work opportunities. Please provide more details about your availability, skills, and rates.\n\nBest regards,\n[Your Name]";
 
   const gmailURL = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
