@@ -228,10 +228,6 @@ p {
   padding-left: 0.6rem;
 }
 
-#contact > p:last-child {
-  margin-bottom: 2%;
-}
-
 #description {
   margin: 1% 0 1% 0.5%;
   text-align: justify;
@@ -388,6 +384,127 @@ p {
   margin-top: 2%;
   margin-left: 0;
 }
+
+
+/* Contact Section */
+#contact-section {
+  margin: 1% 13% 30px 13%;
+  background: #121212;
+  font-family: Arial, sans-serif;
+}
+
+.contact-wrapper {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* ===== Left Side Info ===== */
+.contact-left {
+  flex: 1;
+  min-width: 300px;
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.contact-heading {
+  background: #ffcc00;
+  color: #fff;
+  padding: 12px;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+.contact-box {
+  margin-bottom: 20px;
+}
+
+.contact-box h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.contact-box p {
+  font-size: 14px;
+  color: white;
+  line-height: 1.4;
+}
+
+/* Social Icons */
+.contact-social {
+  margin-top: 15px;
+}
+
+.contact-social a {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.contact-social img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s;
+}
+
+.contact-social img:hover {
+  transform: scale(1.1);
+}
+
+/* ===== Right Side Form ===== */
+.contact-right {
+  flex: 1;
+  min-width: 300px;
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.contact-form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form-box input,
+.contact-form-box textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.contact-form-box textarea {
+  resize: none;
+  min-height: 80px;
+}
+
+.captcha-label {
+  font-size: 13px;
+  color: #333;
+}
+
+.contact-btn {
+  background: #ffcc00;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-btn:hover {
+  background: white;
+}
+
 
 .map-container {
   display: flex;
@@ -559,123 +676,4 @@ footer {
 .carousel-control-next {
   padding-right: 10%;
   margin-right: 10%;
-}
-
-/* Contact Section */
-#contact-section {
-  padding: 50px 10%;
-  background: #121212;
-  font-family: Arial, sans-serif;
-}
-
-.contact-wrapper {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-/* ===== Left Side Info ===== */
-.contact-left {
-  flex: 1;
-  min-width: 300px;
-  background: #1e1e1e;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.contact-heading {
-  background: #ffcc00;
-  color: #fff;
-  padding: 12px;
-  text-align: center;
-  font-size: 18px;
-  margin-bottom: 20px;
-  border-radius: 6px;
-}
-
-.contact-box {
-  margin-bottom: 20px;
-}
-
-.contact-box h3 {
-  font-size: 16px;
-  margin-bottom: 5px;
-  color: white;
-}
-
-.contact-box p {
-  font-size: 14px;
-  color: white;
-  line-height: 1.4;
-}
-
-/* Social Icons */
-.contact-social {
-  margin-top: 15px;
-}
-
-.contact-social a {
-  margin-right: 10px;
-  display: inline-block;
-}
-
-.contact-social img {
-  width: 30px;
-  height: 30px;
-  transition: transform 0.3s;
-}
-
-.contact-social img:hover {
-  transform: scale(1.1);
-}
-
-/* ===== Right Side Form ===== */
-.contact-right {
-  flex: 1;
-  min-width: 300px;
-  background: #1e1e1e;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.contact-form-box {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.contact-form-box input,
-.contact-form-box textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 14px;
-  width: 100%;
-}
-
-.contact-form-box textarea {
-  resize: none;
-  min-height: 80px;
-}
-
-.captcha-label {
-  font-size: 13px;
-  color: #333;
-}
-
-.contact-btn {
-  background: #ffcc00;
-  color: #fff;
-  border: none;
-  padding: 12px;
-  font-size: 14px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.contact-btn:hover {
-  background: white;
 }
