@@ -1,4 +1,4 @@
-const navLinks = document.querySelectorAll(".top-nav a");
+const navLinks = document.querySelectorAll(".top-nav a, .btn-enter[href^='#']"); 
 const sections = document.querySelectorAll("section");
 const toggle = document.getElementById("myToggle");
 const body = document.body;
@@ -14,25 +14,29 @@ function setActive(sectionId) {
   navLinks.forEach(link => link.classList.remove("active"));
   sections.forEach(sec => sec.classList.remove("active"));
 
-  document.querySelector(`.top-nav a[href="#${sectionId}"]`)?.classList.add("active");
+  document.querySelector(`a[href="#${sectionId}"]`)?.classList.add("active");
   document.getElementById(sectionId)?.classList.add("active");
 
   localStorage.setItem("activeSection", sectionId);
 }
 
-// Handle click on nav links
+// Handle click on nav links + hire me
 navLinks.forEach(link => {
   link.addEventListener("click", (e) => {
-    e.preventDefault();
-    const sectionId = link.getAttribute("href").substring(1);
-    const section = document.getElementById(sectionId);
+    const href = link.getAttribute("href");
 
-    const yOffset = -72; 
-    const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    // Only handle internal links with #
+    if (href.startsWith("#")) {
+      e.preventDefault();
+      const sectionId = href.substring(1);
+      const section = document.getElementById(sectionId);
 
-    window.scrollTo({ top: y, behavior: "smooth" });
+      const yOffset = -72; 
+      const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
-    setActive(sectionId);
+      window.scrollTo({ top: y, behavior: "smooth" });
+      setActive(sectionId);
+    }
   });
 });
 
@@ -120,3 +124,29 @@ function showSlide(index) {
 function changeSlide(step) {
   showSlide(currentSlide + step);
 }
+
+function toggleMenu() {
+  const nav = document.querySelector('.nav-links');
+  const hamburger = document.querySelector('.hamburger');
+
+  nav.classList.toggle('active');
+
+  // Change icon ☰ ↔ ✖
+  if (nav.classList.contains('active')) {
+    hamburger.textContent = "✖";
+  } else {
+    hamburger.textContent = "☰";
+  }
+}
+
+// Close menu when clicking a link
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    const nav = document.querySelector('.nav-links');
+    const hamburger = document.querySelector('.hamburger');
+    if (nav.classList.contains('active')) {
+      nav.classList.remove('active');
+      hamburger.textContent = "☰";
+    }
+  });
+});
