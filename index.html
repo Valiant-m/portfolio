@@ -228,28 +228,71 @@
         </div>
       </div>
     </section>
-
+    
+    
     <!-- My Project Section -->
-    <section id="projects" class="content-section">
-      <h2>My Projects</h2>
-      <div class="card-container">
-        <div class="card-two">
-          <img src="assets/images/image.png">
-          <h3>Kultoura</h3>
-          <p>Thesis </p>
-        </div>
-        <div class="card-two">
-          <img src="assets/images/image.png">
-          <h3>Wordy Game</h3>
-          <p>Corba Application </p>
-        </div>
-        <div class="card-two">
-          <img src="assets/images/image.png">
-          <h3>Document Reviewer Web Application</h3>
-          <p>Document Reviewer</p>
-        </div>  
+  <section id="projects" class="content-section">
+    <h2>My Projects</h2>
+    <div class="card-container">
+      <!-- Project 1 -->
+      <div class="card-two" 
+          onclick="openModal(this)" 
+          data-title="A QR Code-Based AR-Driven Two-Module Web Application for the SLU Museum of Igorot Culture and Arts"
+          data-desc="Our capstone project is an AR-driven progressive web application for museums that enhances the visitor experience through QR code scanning, AR interaction, and a virtual assistant for detailed artifact information. It also provides a curator module for managing artifact data, uploading media, generating QR codes, and tracking visitor analytics. The system is mobile-friendly and was developed in collaboration with museum curators, with an initial deployment focusing on about 50 artifacts."
+          data-tech="PHP, HTML, CSS, JavaScript"
+          data-role="System Architect"
+          data-images="assets/images/projects/kultoura/1.png,assets/images/projects/kultoura/login.png,assets/images/projects/kultoura/kultoura2.png,assets/images/projects/kultoura/admin.png,assets/images/projects/kultoura/admin2.png">
+        <img src="assets/images/projects/kultoura/about.png">
+        <h3>Capstone Project</h3>
+        <p>Our capstone project is an AR-driven ..</p>
       </div>
-    </section>
+
+      <!-- Project 2 -->
+      <div class="card-two" 
+          onclick="openModal(this)" 
+          data-title="Wordy Game"
+          data-desc="A CORBA-based word guessing game with multiplayer functionality."
+          data-tech="Java, CORBA"
+          data-role="Backend Developer"
+          data-images="assets/images/projects/wordy1.png,assets/images/projects/wordy2.png">
+        <img src="assets/images/image.png">
+        <h3>Wordy Game</h3>
+        <p>A CORBA-based word guessing ..</p>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="card-two" 
+          onclick="openModal(this)" 
+          data-title="Transerve"
+          data-desc="A document reviewer platform designed to streamline content verification."
+          data-tech="React, Node.js, MongoDB"
+          data-role="Backend Developer"
+          data-images="assets/images/projects/Screenshot 2025-10-03 092242.png">
+        <img src="assets/images/projects/Screenshot 2025-10-03 092242.png">
+        <h3>Transerve</h3>
+        <p>A document reviewer platform ..</p>
+      </div>  
+    </div>
+  </section>
+
+  <!-- Single Modal -->
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('projectModal')">&times;</span>
+      <h2 id="modalTitle"></h2>
+
+      <!-- Image Carousel -->
+      <div class="carousel">
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <div class="carousel-images" id="carouselContainer"></div>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+      </div>
+
+      <h3 id="modalRole"></h3>
+      <p><strong>Description:</strong> <span id="modalDesc"></span></p>
+      <p><strong>Tech Utilized:</strong> <span id="modalTech"></span></p>
+    </div>  
+  </div>
 
     <!-- Achiements Section --> 
     <section id="achievements" class="content-section">
@@ -258,7 +301,7 @@
         <div class="card-two">
           <img src="assets/images/image.png">
           <h3>Kultoura</h3>
-          <p>This is a  </p>
+          <p>Our capstone project is an</p>
         </div>
         <div class="card-two">
           <img src="assets/images/image.png">
@@ -285,20 +328,26 @@
 
           <div class="contact-box">
             <img src="assets/images/contact/phone-call.png">
-            <h3> Phone Number</h3>
-            <p>1231231</p>
+            <div class="contact-box-text">
+              <h3>Phone </h3>
+              <p>12357</p>
+            </div>
           </div>
 
           <div class="contact-box">
             <img src="assets/images/contact/mail.png">
-            <h3> Email</h3>
-            <p>123@gmail.com</p>
+            <div class="contact-box-text">
+              <h3>Email </h3>
+              <p>example@gmail.com</p>
+            </div>
           </div>
 
           <div class="contact-box">
             <img src="assets/images/contact/location.png">
-            <h3> Location</h3>
-            <p>123 address</p>
+            <div class="contact-box-text">
+              <h3> Location </h3>
+              <p>Address</p>
+            </div>
           </div>
 
           <div class="contact-social">
@@ -314,14 +363,16 @@
           </div>
         </div>
 
-        <div class="contact-right">
-          <h2 class="contact-heading">Contact Us</h2>
-          <form action="mailto:info@example.com" method="post" enctype="text/plain" class="contact-form-box">
-            <input type="email" name="email" placeholder="Your Email *" required>
-            <textarea name="message" placeholder="Your Message *" required></textarea>
-            <button type="submit" class="contact-btn">Send ✈️</button>
-          </form>
-        </div>
+          <div class="contact-right">
+            <h2 class="contact-heading">Contact Us</h2>
+            <form id="contactForm" class="contact-form-box">
+              <label>Email: </label>
+              <input type="email" name="email" placeholder="Enter Email" required>
+              <label>Message: </label>
+              <textarea name="message" placeholder="Enter Your Message " required></textarea>
+              <button type="submit" class="contact-btn">Send </button>
+            </form>
+          </div>
       </div>
     </section>
 

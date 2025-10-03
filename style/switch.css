@@ -134,3 +134,139 @@ body.light-mode .top-nav a.active {
   color: #ffcc00; 
 }
 
+/* Contact Section */
+body.light-mode #contact-section {
+  margin: 1% 13% 30px 13%;
+  background: white;
+  font-family: Arial, sans-serif;
+}
+
+body.light-mod .contact-wrapper {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+
+/* ===== Left Side Info ===== */
+body.light-mode .contact-left {
+  flex: 1;
+  min-width: 300px;
+  background: rgb(83, 80, 80);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+body.light-mode .contact-heading {
+  background: white;
+  color: black;
+  padding: 12px;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+body.light-mode .contact-box {
+  display: flex;
+  align-items: center;  
+  gap: 12px;
+  margin-bottom: 20px;
+  margin-left: 5%;
+}
+
+body.light-mode .contact-box-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;                
+}
+
+.contact-box-text h3 {
+  margin: 0;
+  font-size: 16px;
+  color: white;
+}
+
+.contact-box-text p {
+  margin: 0;
+  font-size: 14px;
+  color: white;
+}
+background
+/* Social Icons */
+.contact-social {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;  
+  gap: 20px;                
+}
+
+.contact-social img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s;
+}
+
+.contact-social img:hover {
+  transform: scale(1.1);
+}
+
+/* ===== Right Side Form ===== */
+body.light-mode .contact-right {
+  flex: 1;
+  min-width: 300px;
+  background: rgb(83, 80, 80);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.contact-form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form-box input,
+.contact-form-box textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.contact-form-box textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+.captcha-label {
+  font-size: 13px;
+  color: #333;
+}
+
+.contact-btn {
+  background:white;
+  color: black  ;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-btn:hover {
+  background: #ffcc00;
+}
+
+.contact-box img {
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+  filter: brightness(0) invert(1);
+}
+

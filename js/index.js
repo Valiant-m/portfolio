@@ -72,12 +72,51 @@ toggle.addEventListener("change", () => {
   }
 });
 
-function openGmailCompose() {
-  const email = "miingvaliant@gmail.com"; 
-  const subject = "Hiring Inquiry – Portfolio Website";
-  const body = "Hello,\n\nI came across your portfolio and I’m interested in discussing potential work opportunities. Please provide more details about your availability, skills, and rates.\n\nBest regards,\n[Your Name]";
+function openModal(card) {
+  document.getElementById("projectModal").style.display = "block";
 
-  const gmailURL = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  // Set content dynamically
+  document.getElementById("modalTitle").textContent = card.dataset.title;
+  document.getElementById("modalDesc").textContent = card.dataset.desc;
+  document.getElementById("modalTech").textContent = card.dataset.tech;
+  document.getElementById("modalRole").textContent = "Role: " + card.dataset.role;
 
-  window.open(gmailURL, '_blank'); 
+  // Setup carousel
+  const container = document.getElementById("carouselContainer");
+  container.innerHTML = ""; 
+  const images = card.dataset.images.split(",");
+  images.forEach((src, index) => {
+    let img = document.createElement("img");
+    img.src = src.trim();
+    if (index === 0) img.classList.add("active");
+    container.appendChild(img);
+  });
+
+  currentSlide = 0;
+  showSlide(0);
+}
+
+function closeModal(id) {
+  document.getElementById(id).style.display = "none";
+}
+
+window.onclick = function(event) {
+  document.querySelectorAll('.modal').forEach(modal => {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  });
+};
+
+// Carousel Logic
+let currentSlide = 0;
+function showSlide(index) {
+  let slides = document.querySelectorAll(".carousel-images img");
+  if (slides.length === 0) return;
+  slides.forEach(img => img.classList.remove("active"));
+  currentSlide = (index + slides.length) % slides.length;
+  slides[currentSlide].classList.add("active");
+}
+function changeSlide(step) {
+  showSlide(currentSlide + step);
 }
