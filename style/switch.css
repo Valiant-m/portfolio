@@ -98,7 +98,7 @@ body.light-mode #home > img:first-child {
   object-position: top;
 }
 
-body.light-mode #about h2, body.light-mode #portfolio h2, body.light-mode #resume h2, body.light-mode #gallery h2, body.light-mode #contact h2, body.light-mode #achievements h2, body.light-mode .school-address {
+body.light-mode #about h2, body.light-mode #portfolio h2, body.light-mode #resume h2, body.light-mode #gallery h2, body.light-mode #contact h2, body.light-mode #achievements h2, body.light-mode #projects h2,  body.light-mode .school-address {
   color:#121212;
 }
 
